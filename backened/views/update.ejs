@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <%- include('nav')%>
+    
+    <div class="container">
+        <h1>Add Update</h1>
+        <form class="form" action="/update" method="post">
+            <input value="<%=result.tittle %>"class="input" name="'update" type="text" placeholder="Enter the Task Tittle">
+            <br>
+            <br>
+            <textarea class="input" name="Description" id=""><%=result.Description %> </textarea>
+
+           
+            <br>
+            <br>
+            <button class="btn">Update</button>
+        </form>
+    </div>
+</body>
+</html>
