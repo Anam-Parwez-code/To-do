@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
      <%- include('nav')%>
     
     <div class="container">
         <h1>Add Update</h1>
-        <form class="form" action="/update" method="post">
-            <input value="<%=result.tittle %>"class="input" name="'update" type="text" placeholder="Enter the Task Tittle">
+        <form class="form" action="/update/<%=result._id %>" method="post">
+            <label>Tittle</label>
+            <input value="<%=result.tittle %>"class="input" name="tittle" type="text" placeholder="Enter the Task Tittle">
             <br>
             <br>
-            <textarea class="input" name="Description" id=""><%=result.Description %> </textarea>
+            <label>Description</label>
+            <textarea class="input" name="Description" id=""value="<%=result.Description %>"> </textarea>
 
            
             <br>
