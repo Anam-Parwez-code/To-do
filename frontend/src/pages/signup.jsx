@@ -32,7 +32,7 @@ function Signup() {
      return handleError('name,email and password are required')
     }
     try{
-     const url ="http://localhost:8080/auth/signup";
+     const url ="https://mern-authentication-ivory-eta.vercel.app/auth/signup";
      //app.post("/api/auth/signup", signup);
 
      const response=await fetch(url,{
